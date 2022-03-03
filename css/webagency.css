@@ -1,0 +1,308 @@
+body
+{
+    display: block;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/** la section header (entête) **/
+
+/** la section logo et positionement du menu **/
+.logo_menu
+{
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo
+{
+    position: fixed;
+    left: 15%;
+    margin-bottom: -5%;
+}
+/** la section menu de navigation **/ 
+nav
+{
+    position: fixed;
+    right: 15%;
+    margin-bottom: -5%;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav ul li
+{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+nav
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+/** la section slider **/
+.slider
+{
+    margin-top: 5%;
+    align-items: center;
+    background-size: cover;
+    height: 400px;
+    justify-content: right;
+    animation: animate 10s ease-in-out infinite;
+    color: white;
+}
+.slider > .slider_text
+{
+    padding-top: 6%;
+    margin-left: 13%;
+    width: 33%;
+}
+span
+{
+    color: rgb(18, 168, 168);
+}
+.slider h3 > .booton
+{
+    color: white;
+    background-color:rgb(18, 168, 168);
+    padding: 5px;
+}
+/** la section insertion des images de slider **/
+@keyframes animate
+{
+    0%, 100%
+    {
+        background-image: url(../images/slider/bg1.jpg);
+    }
+    50%
+    {
+        background-image: url(../images/slider/bg2.jpg);
+    }
+}
+
+/** la section corps (main)**/
+.services, .projets
+{
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+.services > h2, .projets > h2
+{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: gray;
+}
+
+.contenu_services
+{
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+aside
+{
+    margin-top: 5.5%;
+    margin-left: 19%;
+    margin-right: 2%;
+}
+
+aside > .contenu 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenu_icone
+{
+    color: rgb(29, 79, 218);
+    margin: 20px;
+    border: solid 2px rgb(24, 59, 211);
+    border-radius: 20px/20px;
+    padding: 5px;
+}
+
+.contenu > p
+{
+    font-size: 1em;
+    font-weight: 200;
+    color: gray;
+    margin-top: -3%;
+}
+
+.contenu
+{
+    margin-bottom: 5%;
+}
+
+.navigation a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+.navigation
+{
+    display: flex;
+    background-color: rgba(175, 175, 175, 0.295);
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+    margin-left: 34%;
+    margin-right: 34%;
+}
+.navigation > .class_port
+{
+    margin-right: 3%;
+}
+
+.sec_projets
+{
+    background-color: rgba(206, 144, 144, 0.164);
+    padding-top: 0.4%;
+}
+/**.sec_projets .navigation ul .all**/
+{
+    background-color: rgb(25, 120, 230);
+    height: 20px;
+}
+.images p
+{
+    display: flex;
+    padding-left: 5%;
+}
+
+.images p > img
+{
+    height: 130px;
+    width: 250px;
+    margin-right: 1.5%;
+}
+
+.images
+{
+    margin-bottom: -1%;
+    margin-top: 3%;
+}
+
+/** pied de page : note Formolaire de Contacte **/
+
+/** la section arrière plan de pied de page 
+.arriere_plan
+{
+    display: flex;
+    background-image: url(<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25512.97618395858!2d2.3191001831243514!3d48.87235682575259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris%2C%20France!5e0!3m2!1sfr!2sbj!4v1645461849761!5m2!1sfr!2sbj"
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>);
+    background-size: cover;
+    height: 600px;    
+}**/
+
+/** la section Fomulaire de contact **/
+.contactez_nous
+{
+    width: 20%;
+    height: 530px;
+    border: none;
+    padding: 2%;
+    padding-top: 0;
+    margin-top: -45%;
+    margin-bottom: 0;
+    background: rgba(248, 246, 246, 0.664);
+    position: relative;
+    left: 65%;
+}
+
+.contactez_nous h1
+{
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.contactez_nous h4
+{
+    font-weight: 700;
+    font-size: 1.5em;
+    opacity: 0.7;
+    margin-top: -0.5%;
+}
+
+.contactez_nous p
+{
+    font-weight: 300;
+    margin-top: -9%;
+}
+
+form div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /**min-height: 15px;**/
+    margin-top: 20px;
+}
+
+form div > input, form div > textarea
+{
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+form div > input
+{
+    height: 30px;
+    padding-left: 10px;
+}
+
+form div > textarea
+{
+    height: 150px;
+    padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder
+{
+    color: gray;
+    opacity: 0.9;
+}
+
+form button
+{
+    width: 150px;
+    /**max-width: 500px;**/
+    height: 50px;
+    font-weight: 200;
+    font-size: 1em;
+    background: rgb(52, 152, 199);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+}
